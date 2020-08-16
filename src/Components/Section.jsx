@@ -4,13 +4,19 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Anchors from "./Anchors";
 
-function Section() {
+function Section(props) {
 	return (
-		<div>
+		<div id={props.SectionID}>
 			<Container fluid>
 				<Row>
-					<Col></Col>
-					<Col></Col>
+					<Col bsPrefix={"col-xs-12 col-md-6 " + props.HeadingCol}>
+						<h1>{props.heading}</h1>
+						<p>{props.quote}</p>
+						<Anchors></Anchors>
+					</Col>
+					<Col bsPrefix={"col " + props.ContentCol}>{props.content}
+						<p>Omkar Hankare</p>
+					</Col>
 				</Row>
 			</Container>
 		</div>

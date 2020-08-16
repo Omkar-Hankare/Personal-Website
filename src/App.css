@@ -3,7 +3,22 @@
 	border-right-style: solid;
 	border-left-width: 2px;
 	border-right-width: 2px;
-	border-color: #ffdb49;
+}
+
+/* PROFILE SECTION */
+
+.Profile {
+	background-color: black;
+	color: #ffdb49;
+	height: 810px;
+}
+
+.Profile a.Anchor_link2 {
+	color: #ffdb49;
+}
+
+.Profile a {
+	color: #ffdb49;
 }
 
 .TypingCarousel {
@@ -13,8 +28,51 @@
 	border-color: #ffdb49;
 }
 
-.Profile {
-	background-color: black;
-	color: #ffdb49;
-	height: 722px; 
+/* ABOUT SECTION */
+
+#About a {
+	color: #000000;
+}
+
+#About .HeadingCol {
+	background-color: #ffdb49;
+	color: black;
+}
+
+#About .ContentCol {
+	height: 810px;
+	background-color: #dddddd;
+}
+
+/* SKILLS SECTION */
+
+#Skills a {
+	color: white;
+}
+
+#Skills .HeadingCol {
+	background-color: #127681;
+	color: white;
+}
+
+#Skills .ContentCol {
+	height: 810px;
+	background-color: #dddddd;
+}
+
+/* CONTACT SECTION */
+
+#Contact a {
+	color: white;
+}
+
+#Contact .HeadingCol {
+	height: 350px;
+	background-color: #323232;
+	color: white;
+}
+
+#Contact .ContentCol {
+	height: 350px;
+	background-color: #dddddd;
 }
