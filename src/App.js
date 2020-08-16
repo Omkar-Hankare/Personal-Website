@@ -9,7 +9,6 @@ function App() {
 
 			<Section
 				SectionID="About"
-
 				HeadingCol="HeadingCol"
 				ContentCol="ContentCol"
 				heading="About"
@@ -18,7 +17,6 @@ function App() {
 			></Section>
 			<Section
 				SectionID="Skills"
-
 				HeadingCol="HeadingCol"
 				ContentCol="ContentCol"
 				heading="Skills"
@@ -27,7 +25,6 @@ function App() {
 			></Section>
 			<Section
 				SectionID="Contact"
-
 				HeadingCol="HeadingCol"
 				ContentCol="ContentCol"
 				heading="Contact"
