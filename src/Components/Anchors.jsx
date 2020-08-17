@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 function Anchors() {
 	return (
 		<div class="Anchors">
-			<Nav defaultActiveKey="/home" as="ul">
+			<Nav className="justify-content-center" defaultActiveKey="/home" as="ul">
 				<Nav.Item as="li">
 					<Nav.Link href="#About">About</Nav.Link>
 				</Nav.Item>

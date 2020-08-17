@@ -8,24 +8,107 @@
 /* PROFILE SECTION */
 
 .Profile {
+	font-family: "Montserrat", sans-serif;
 	background-color: black;
 	color: #ffdb49;
-	height: 810px;
+	height: 730px;
 }
 
-.Profile a.Anchor_link2 {
-	color: #ffdb49;
+.Profile h1 {
+	font-family: "Sacramento", cursive;
+	font-size: 8em;
 }
 
-.Profile a {
-	color: #ffdb49;
+/* Arrow animation */
+
+.arrow {
+	position: absolute;
+	left: 15%;
+	top: -50px;
+	transform: translate(-50%, -50%);
+}
+.arrow span {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-bottom: 5px solid #ffdb49;
+	border-right: 5px solid #ffdb49;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+.arrow span:nth-child(2) {
+	animation-delay: -0.2s;
+}
+.arrow span:nth-child(3) {
+	animation-delay: -0.4s;
+}
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
 }
 
-.TypingCarousel {
+.Profile1 {
+	height: 680px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.Profile1 .container-fluid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Profile1 p {
 	display: inline;
+	font-size: 2em;
+}
+
+p.TypingCarousel {
 	border-right-style: solid;
 	border-right-width: 2px;
 	border-color: #ffdb49;
+}
+
+.Profile2 a.Anchor_link2 {
+	color: #ffdb49;
+}
+
+.Profile2 a {
+	color: #ffdb49;
+}
+
+/* COMMON STUFF */
+
+#About .headingDiv,
+#Skills .headingDiv,
+#Contact .headingDiv {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	height: 670px;
+}
+
+.HeadingCol h1 {
+	font-family: "Sacramento", cursive;
+	font-size: 8em;
+}
+
+.HeadingCol p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 2em;
+	font-weight: 200;
 }
 
 /* ABOUT SECTION */
@@ -40,7 +123,7 @@
 }
 
 #About .ContentCol {
-	height: 810px;
+	height: 750px;
 	background-color: #dddddd;
 }
 
@@ -56,7 +139,7 @@
 }
 
 #Skills .ContentCol {
-	height: 810px;
+	height: 750px;
 	background-color: #dddddd;
 }
 
@@ -67,12 +150,18 @@
 }
 
 #Contact .HeadingCol {
-	height: 350px;
+	text-align: center;
+	height: 720px;
 	background-color: #323232;
 	color: white;
 }
 
+#Contact h1 {
+	font-family: "Sacramento", cursive;
+	font-size: 8em;
+}
+
 #Contact .ContentCol {
-	height: 350px;
+	height: 730px;
 	background-color: #dddddd;
 }

@@ -6,9 +6,9 @@ function TypingCarousel() {
 			<p className="TypingCarousel">
 				I am a{" "}
 				<span
-					class="txt-rotate"
+					className="txt-rotate"
 					data-period="2000"
-					data-rotate='[ "Web developer. ", "Web Designer. ", "programmer."]'
+					data-rotate='[ " Web Developer. ", " Web Designer. ", " Programmer."]'
 				></span>
 			</p>
 		</div>

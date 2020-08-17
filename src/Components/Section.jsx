@@ -9,8 +9,17 @@ function Section(props) {
 			<Container fluid>
 				<Row>
 					<Col bsPrefix={"col-xs-12 col-md-6 " + props.HeadingCol}>
-						<h1>{props.heading}</h1>
-						<p>{props.quote}</p>
+						<div className="headingDiv">
+							<Container fluid>
+								<Row>
+									<Col>
+										<h1>{props.heading}</h1>
+										<p>{props.quote}</p>
+									</Col>
+								</Row>
+							</Container>
+						</div>
+
 						<Anchors></Anchors>
 					</Col>
 					<Col bsPrefix={"col " + props.ContentCol}>
