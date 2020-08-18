@@ -141,6 +141,20 @@ p.TypingCarousel {
 #Skills .ContentCol {
 	height: 750px;
 	background-color: #dddddd;
+	color: #000000;
+}
+
+.FrontEnd_skills {
+	/* display: flex;
+	justify-content: center; */
+	text-align: center;
+	height: 700px;
+	background-color: darkgray;
+}
+
+.SkillsRender p {
+	margin-right: 1em;
+	display: inline;
 }
 
 /* CONTACT SECTION */
