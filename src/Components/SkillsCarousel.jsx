@@ -8,46 +8,36 @@ function SkillsRender(skill) {
 		s += "⭐";
 	}
 	return (
-		<div className="SkillsRender">
-			<p>{skill.Name}</p>
-			<p>{s}</p>
-		</div>
+		<li className= "skill_item">
+			<span class="ability-title">{skill.Name}</span>
+			<span class="ability-score">
+				<span class="glyphicon glyphicon-star filled">{s}</span>
+			</span>
+		</li>
 	);
 }
 
 function SkillCarousel() {
 	return (
-		<div>
+		<div className="SkillCarousel">
 			<Carousel>
 				<Carousel.Item>
 					<div className="FrontEnd_skills">
 						<h1>Front End Skills</h1>
-						{FrontEnd.map(SkillsRender)}
+						<ul className="skill_ul">{FrontEnd.map(SkillsRender)}</ul>
 					</div>
-
-					<Carousel.Caption>
-						<h3>First slide label</h3>
-					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
 					<div className="FrontEnd_skills">
 						<h1>Back End Skills</h1>
-						{BackEnd.map(SkillsRender)}
+						<ul className="skill_ul">{BackEnd.map(SkillsRender)}</ul>
 					</div>
-
-					<Carousel.Caption>
-						<h3>First slide label</h3>
-					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
 					<div className="FrontEnd_skills">
 						<h1>Other technologies</h1>
-						{OtherSkills.map(SkillsRender)}
+						<ul className="skill_ul">{OtherSkills.map(SkillsRender)}</ul>
 					</div>
-
-					<Carousel.Caption>
-						<h3>First slide label</h3>
-					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
 		</div>

@@ -91,15 +91,6 @@ p.TypingCarousel {
 
 /* COMMON STUFF */
 
-#About .headingDiv,
-#Skills .headingDiv,
-#Contact .headingDiv {
-	text-align: center;
-	display: flex;
-	align-items: center;
-	height: 670px;
-}
-
 .HeadingCol h1 {
 	font-family: "Sacramento", cursive;
 	font-size: 8em;
@@ -109,6 +100,13 @@ p.TypingCarousel {
 	font-family: "Montserrat", sans-serif;
 	font-size: 2em;
 	font-weight: 200;
+}
+
+.HeadingCol {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /* ABOUT SECTION */
@@ -144,17 +142,46 @@ p.TypingCarousel {
 	color: #000000;
 }
 
-.FrontEnd_skills {
-	/* display: flex;
-	justify-content: center; */
-	text-align: center;
-	height: 700px;
+.SkillCarousel {
+	margin: 1em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 720px;
 	background-color: darkgray;
 }
 
-.SkillsRender p {
+.SkillCarousel .carousel {
+	position: static;
+	width: 100%;
+}
+
+.FrontEnd_skills {
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.skill_ul {
+	list-style-type: none;
+	width: 50%;
+	margin: 10px;
+	padding: 0;
+}
+
+.skill_item {
+	display: flex;
+}
+
+.ability-title {
+	align-self: flex-start;
+}
+
+.ability-score {
 	margin-right: 1em;
-	display: inline;
 }
 
 /* CONTACT SECTION */

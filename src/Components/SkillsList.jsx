@@ -1,5 +1,3 @@
-import React from "react";
-
 const FrontEnd = [
 	{ key: 1, Name: "HTML5", Rating: 5 },
 	{ key: 2, Name: "CSS", Rating: 5 },
