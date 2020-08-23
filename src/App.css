@@ -210,6 +210,10 @@ span.highlight {
 	text-align: center;
 }
 
+.carousel-item h2 {
+	text-align: center;
+}
+
 .carousel-control-next,
 .carousel-control-prev {
 	top: 18.5%;
@@ -351,9 +355,13 @@ footer p {
 	.HeadingCol {
 		height: 550px;
 	}
+
 	.ContactContent {
 		height: 600px;
-		flex-direction: row;
+	}
+
+	.div1 h1 {
+		font-size: 1.6em;
 	}
 
 	.div1 ol {
