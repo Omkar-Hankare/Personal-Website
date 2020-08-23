@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import Profile from "./Components/Profile";
-import Section from "./Components/Section";
+import Profile from "./Components/View/Profile";
+import Section from "./Components/View/Section";
 function App() {
 	return (
 		<div>
@@ -19,7 +19,7 @@ function App() {
 				HeadingCol="HeadingCol"
 				ContentCol="ContentCol"
 				heading="Skills"
-				quote="Set your heart upon your work, but never it's reward."
+				quote=" 'Set your heart upon your work, but never it's reward.' "
 			></Section>
 			<Section
 				SectionID="Contact"
