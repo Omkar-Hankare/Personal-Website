@@ -22,7 +22,7 @@
 
 .Profile h1 {
 	font-family: "Sacramento", cursive;
-	font-size: 8em;
+	font-size: 7em;
 }
 
 /* Arrow animation */
@@ -264,7 +264,7 @@ span.highlight {
 }
 
 .ContactContent {
-	height: 730px;
+	height: 750px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -326,4 +326,37 @@ i:hover.fa-envelope {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
 	display: block;
+}
+
+footer {
+	height: 100px;
+	background-color: black;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	margin: 0;
+}
+
+footer button {
+	margin: 5px;
+}
+
+footer p {
+	color: white;
+	margin: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 770px) {
+	.HeadingCol {
+		height: 550px;
+	}
+	.ContactContent {
+		height: 600px;
+		flex-direction: row;
+	}
+
+	.div1 ol {
+		margin-left: 25px;
+	}
 }
